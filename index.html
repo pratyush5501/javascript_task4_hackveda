@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+</head>
+<body>
+    <h1 class="text-center">OPERATIONS AND COMPARISONS </h1>
+    
+    <div class = "operators">
+    <form>
+    a: <input type="number" name="a" id="a"><br>
+    b: <input type="number" name="b" id="b"><br>
+    </form>
+    <button onclick="result()">RESULT</button><br>
+    
+    <input type="text" id="add" placeholder="add" readonly><br>
+    <input type="text" id="sub" placeholder="sub" readonly><br>
+    <input type="text" id="mul" placeholder="mul" readonly><br>
+    <input type="text" id="div" placeholder="div" readonly><br>
+    
+
+    </div>   
+</body>
+<script>
+   function result(){
+    var a = parseFloat(document.getElementById("a").value);
+    var b = parseFloat(document.getElementById("b").value);
+    var add = a + b;
+    var sub = a - b;
+    var mul = a * b;
+    var div = a / b; 
+    
+
+    document.getElementById("add").value = add;
+    document.getElementById("sub").value = sub;
+    document.getElementById("mul").value = mul;
+    document.getElementById("div").value = div;
+
+   }
+</script>
+
+</html>
+
